@@ -20,10 +20,10 @@ public class Registro {
 @GeneratedValue( strategy = GenerationType.IDENTITY)
 
 private Long idregistro;
-private String tipoCafe;
-private String tiempoGerminacion;
-private String tiempoSiembra;
-private String tiempoFruto;
-private String añosProducion;
+private String tipocafe;
+private String tiempogerminacion;
+private String tiemposiembra;
+private String tiempofruto;
+private String aniosproducion;
 
 }

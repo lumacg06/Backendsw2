@@ -1,6 +1,8 @@
 package com.apirests2.backends2.controllers;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,15 +24,15 @@ public class RegistroController {
     private RegistroRepository registroRepository;
 
     @GetMapping
-    public java.util.List<Registro> obtenerTodosLosRegistros(){
+    public List <Registro> obtenerTodosLosRegistros(){
         return registroRepository.findAll();
     }
-    
+
     @GetMapping("/{idregistro}")
     public Registro obtenerUsuarioPoridRegistro(@PathVariable Long idregistro){
         return registroRepository.findById(idregistro).orElse(null);     
     }
-    @PostMapping("/{idRegistro}")
+    @PostMapping
     public Registro crearRegistro(@RequestBody Registro registro){
         return registroRepository.save(registro);
     }
