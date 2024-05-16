@@ -16,14 +16,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 
 public class Registro {
-@Id
-@GeneratedValue( strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue( strategy = GenerationType.IDENTITY)
 
-private Long idregistro;
-private String tipocafe;
-private String tiempogerminacion;
-private String tiemposiembra;
-private String tiempofruto;
-private String aniosproducion;
+    private Long idregistro;
+    private String tipocafe;
+    private String tiempogerminacion;
+    private String tiemposiembra;
+    private String tiempofruto;
+    private String aniosproducion;
 
 }

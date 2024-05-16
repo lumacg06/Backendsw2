@@ -34,6 +34,7 @@ public class RegistroController {
     }
     @PostMapping
     public Registro crearRegistro(@RequestBody Registro registro){
+        registro.setIdregistro(null);
         return registroRepository.save(registro);
     }
     @PutMapping("/{idregistro}")
