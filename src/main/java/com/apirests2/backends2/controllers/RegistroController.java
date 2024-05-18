@@ -18,7 +18,7 @@ import com.apirests2.backends2.repositories.RegistroRepository;
 
 @RestController
 @RequestMapping("/api/registros")
-public class RegistroController {
+public class RegistroController extends ApiBaseController{
 
     @Autowired
     private RegistroRepository registroRepository;
@@ -29,7 +29,7 @@ public class RegistroController {
     }
 
     @GetMapping("/{idregistro}")
-    public Registro obtenerUsuarioPoridRegistro(@PathVariable Long idregistro){
+    public Registro obtenerRegistroPorId(@PathVariable Long idregistro){
         return registroRepository.findById(idregistro).orElse(null);     
     }
     @PostMapping
