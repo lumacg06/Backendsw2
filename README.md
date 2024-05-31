@@ -1,4 +1,4 @@
-# Proyecto backends2
+# Proyecto Backends2
 
 ¡Bienvenido a mi Proyecto Backends2! Este es un repositorio donde la magia y el deseo por aprender se han hecho presentes y como resultado de ello, se ha creado este maravilloso proyecto, que es tan solo el inicio a grandes cosas.
 
